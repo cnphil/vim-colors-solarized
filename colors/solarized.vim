@@ -536,7 +536,9 @@ endif
 " note that link syntax to avoid duplicate configuration doesn't work with the
 " exe compiled formats
 
+let g:solarized_bgworkaround = &background
 exe "hi! Normal"         .s:fmt_none   .s:fg_base0  .s:bg_back
+exe "set background=" .g:solarized_bgworkaround
 
 exe "hi! Comment"        .s:fmt_ital   .s:fg_base01 .s:bg_none
 "       *Comment         any comment
